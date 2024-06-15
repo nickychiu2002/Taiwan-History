@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- js -->
+    <script src="./_js/jquery-3.6.4.min.js"></script>
+    <script src="./_js/jquery-ui-1.13.2.custom/_js/jquery-ui.js"></script>
+
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Mochiy+Pop+One&family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./_css/header&footer2.css">
+
+    <title>笑史台灣 首頁</title>
+
+    <style>
+        main{
+            width: 80vw;
+            height: fit-content;
+            margin-bottom: 90px;
+            /* border: 1px solid red; */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .left, .right{
+            margin: 10px 80px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .left_item, .right_item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .period{
+            font-family: 'Dela Gothic One', cursive;
+            font-size: 50px;
+            color: #3c3827;
+
+        }
+        .time_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            /* border: 1px solid #bc1010; */
+            margin: 10px;
+
+            cursor: pointer;
+        }
+        #Nederlanden_title_box p, #Spain_title_box p, #japan_title_box_1 p, 
+        #japan_title_box_2 p, #japan_title_box_3 p{
+            font-family: 'Mochiy Pop One', sans-serif;
+            font-size: 35px;
+            padding: 5px 50px;
+            width: 400px;
+            background-color: #fffbe957;
+            border-radius: 50px;
+            color: #3c3827;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #Nederlanden_title_box p:hover, #Spain_title_box p:hover, #japan_title_box_1 p:hover, 
+        #japan_title_box_2 p:hover, #japan_title_box_3 p:hover{
+            background-color: #fffbe9c9;
+            /* background-color: #3c3827cc; */
+            box-shadow: 2px 2px 5px ;
+            /* color: #fffbe9; */
+        }
+        .event_box{
+            width: 350px;
+            /* padding: 10px; */
+
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 18px;
+            color: #3c3827;
+            /* border: 1px solid #3c3827; */
+            border-radius: 0 0 10px 10px;
+            background-color: #3c382736;
+
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+
+            position: relative;
+        }
+        .Nederlanden_1, .Nederlanden_2, .Spain_1, .Spain_2, 
+        .japan_1, .japan_2, .japan_3, .japan_4, .japan_5, .japan_6{
+            border-radius: 0 0 10px 10px;
+            padding: 10px 15px;
+            /* margin-bottom: 10px; */
+            transition-duration: 800ms;
+            color: #3c3827;
+        }
+        .Nederlanden_1:hover, .Nederlanden_2:hover, .Spain_1:hover, .Spain_2:hover, 
+        .japan_1:hover, .japan_2:hover, .japan_3:hover, .japan_4:hover, .japan_5:hover, .japan_6:hover{
+            background-color: #fffbe9bf;
+            font-size: 22px;
+            transition-duration: 800ms;
+        }
+
+        .go_to_searching, .go_to_introduction{
+            position: absolute;
+            bottom: 38vh;
+            font-family: 'Mochiy Pop One', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .go_to_searching{
+            right: 10vw;
+        }
+
+        .go_to_introduction{
+            left: 10vw;
+        }
+
+        .enter_btn{
+            font-size: 50px;
+            /* font-weight: 500; */
+            transition-duration: 1s;
+        }
+        .enter_btn:hover{
+            font-size: 80px;
+            font-weight: 800;
+            transition-duration: 1s;
+        }
+        .enter_text{
+            font-size: 15px;
+            color: #3c3827;
+            
+        }
+
+        a, a:hover, a:link,a:visited{
+            color: #3c3827;
+            text-decoration: none;
+        }
+    </style>
+            
+    <script>
+            $(document).ready(function () {
+                $('#event_box_1').hide();
+                $('#event_box_2').hide();
+                $('#event_box_3').hide();
+                $('#event_box_4').hide();
+                $('#event_box_5').hide();
+
+                $('#Nederlanden_box').mouseenter(function () {
+                    $('#Nederlanden_box .event_box').slideDown();
+                });
+                $('#Nederlanden_box').mouseleave(function () {
+                    $('#Nederlanden_box .event_box').slideUp();
+                    
+                });
+
+                $('#Spain_box').mouseenter(function () {
+                    $('#Spain_box .event_box').slideDown();
+                });
+                $('#Spain_box').mouseleave(function () {
+                    $('#Spain_box .event_box').slideUp();
+                });
+
+                $('#japan_box_1').mouseenter(function () {
+                    $('#japan_box_1 .event_box').slideDown();
+                });
+                $('#japan_box_1').mouseleave(function () {
+                    $('#japan_box_1 .event_box').slideUp();
+                });
+
+                $('#japan_box_2').mouseenter(function () {
+                    $('#japan_box_2 .event_box').slideDown();
+                });
+                $('#japan_box_2').mouseleave(function () {
+                    $('#japan_box_2 .event_box').slideUp();
+                });
+
+                $('#japan_box_3').mouseenter(function () {
+                    $('#japan_box_3 .event_box').slideDown();
+                });
+                $('#japan_box_3').mouseleave(function () {
+                    $('#japan_box_3 .event_box').slideUp();
+                });
+                
+            })
+    </script>
+</head>
+<body>
+    <header>
+        <img src="./_img/title.png" alt="">
+    </header>
+    
+    <hr style="border: 3px double #4C4834; width: 80vw; ">
+
+    <main>
+        <div class="left">
+            <p class="period">荷西時期</p>
+            <div class="left_item">
+                <div class="time_box" id="Nederlanden_box">
+                    <div id="Nederlanden_title_box"><p>荷蘭</p></div>
+                    <div class="event_box" id="event_box_1">
+                        <div class="Nederlanden_1"><a href="./paper_page/荷蘭/Netherlands2.html" target="_blank" >郭懷一結拜弟弟成叛軍<br>引來殺身之禍</a></div>
+                        <div class="Nederlanden_2"><a href="./paper_page/荷蘭/Netherlands1.html" target="_blank" >輕忽荷蘭人援軍<br>風神天佑鄭成功</a></div>
+                    </div>
+                </div>
+                <div class="time_box" id="Spain_box">
+                    <div id="Spain_title_box" ><p>西班牙</p></div>
+                    <div class="event_box" id="event_box_2">
+                        <div class="Spain_1"><a href="./paper_page/西班牙/Spain.html" target="_blank" >外族入侵!!!<br>再不團結家園恐被奪走!!!</a></div>
+                        <div class="Spain_2"><a href="./paper_page/西班牙/Spain1.html" target="_blank" >擺脫廢物西人<br>支持荷人北上</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <p class="period">日治時期</p>
+            <div class="right_item">
+                <div class="time_box" id="japan_box_1">
+                    <div id="japan_title_box_1" ><p>無方針時期</p></div>
+                    <div class="event_box" id="event_box_3">
+                        <div class="japan_1"><a href="./paper_page/日治_無方針/JapanOne.html" target="_blank" >被統治的悲哀<br>縱火殘殺無數百姓!!!</a></div>
+                        <div class="japan_2"><a href="./paper_page/日治_無方針/JapanOne1.html" target="_blank" >嘴上的理番計畫<br>實為虐殺的美名</a></div>
+                    </div>
+                </div>
+
+                <div class="time_box"  id="japan_box_2">
+                    <div id="japan_title_box_2" ><p>內地延長時期</p></div>
+                    <div class="event_box" id="event_box_4">
+                        <div class="japan_3"><a href="./paper_page/日治_內地延長/JapanTwo.html" target="_blank" >勇敢站出來！<br>此話一出卻一去不復返</a></div>
+                        <div class="japan_4"><a href="./paper_page/日治_內地延長/JapanTwo1.html" target="_blank" >六三法的頒布爭議種種<br>最終面臨了撤廢</a></div>
+                    </div>
+                </div>
+
+                <div class="time_box"  id="japan_box_3">
+                    <div id="japan_title_box_3" ><p>皇民化時期</p></div>
+                    <div class="event_box" id="event_box_5">
+                        <div class="japan_5"><a href="./paper_page/日治_皇民化/JapanThree.html" target="_blank" >「光復」背後台灣人的悲傷</a></div>
+                        <div class="japan_6"><a href="./paper_page/日治_皇民化/JapanThree1.html" target="_blank" >南進!台灣成最大跳板</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="go_to_searching">
+        <a href="./search.html" class="enter_btn"  target="_blank">&gt;</a>
+        <div class="enter_text"><p>我要搜尋</p></div>
+    </div>
+
+    <div class="go_to_introduction">
+        <a href="./introduction.html" class="enter_btn"  target="_blank">&lt;</a>
+        <div class="enter_text"><p>成員介紹</p></div>
+    </div>
+
+    <hr style="border: 3px double #4C4834; width: 80vw; ">
+
+    <footer>
+        <p>若歷史事件以現代人的口吻及風格撰寫成新聞，會如何呢？</p>
+        <p>進入一探究竟吧！</p>
+    </footer>
+</body>
+</html>

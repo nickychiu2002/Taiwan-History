@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- js -->
+    <script src="./_js/jquery-3.6.4.min.js"></script>
+    <script src="./_js/jquery-ui-1.13.2.custom/_js/jquery-ui.js"></script>
+
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Mochiy+Pop+One&family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./_css/header&footer2.css">
+
+    <title>笑史台灣 成員介紹</title>
+
+    <style>
+        .container{
+            /* display: grid;
+            grid-template-areas: 
+            "a b"
+            "c d"; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            margin: 50px 50px 80px 50px;
+        }
+
+        /* .member_box:first-child{
+            grid-area: a;
+        }
+        .member_box:nth-child(2){
+            grid-area: b;
+        }
+        .member_box:nth-child(3){
+            grid-area: c;
+        }
+        .member_box:nth-child(4){
+            grid-area: d;
+        } */
+
+        .member_box{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+
+            flex: 0 0 50%;
+
+            width: 50vw;
+            height: 80vh;
+
+            margin-top: 20px;
+        }
+
+        .name_number{
+            font-family: 'Mochiy Pop One', sans-serif;
+            font-size: 30px;
+            padding: 5px 50px;
+            width: 400px;
+            background-color: #fffbe957;
+            border-radius: 50px;
+            color: #3c3827;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* cursor: pointer; */
+        }
+
+        h1{
+            font-family: 'Mochiy Pop One', sans-serif;
+            font-size: 90px;
+            font-weight: 300;
+            margin: 20px 50px 0 50px;
+            color: #3c3827;
+        }
+
+        .name_number:hover{
+            background-color: #fffbe9c9;
+            box-shadow: 2px 2px 5px ;
+        }
+
+        .all{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .introduction_box{
+            width: 350px;
+            /* padding: 10px; */
+
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #3c3827;
+            /* border: 1px solid #3c3827; */
+            border-radius: 0 0 10px 10px;
+            background-color: #fffbe993;
+
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+
+            position: relative;
+        }
+
+        .yzu, .job{
+            border-radius: 0 0 10px 10px;
+            padding: 10px 15px;
+            
+            /* margin-bottom: 10px; */
+            transition-duration: 1s;
+            color: #3c3827;
+        }
+        .yzu{
+            margin: 20px 20px 10px 20px;
+        }
+        .job{
+            margin: 10px 20px 20px 20px;
+        }
+
+        .job_con{
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .member_img{
+            border-radius: 100px;
+            margin: 50px 50px 30px 50px;
+        }
+
+        .member_img img{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+        }
+        .blank{
+            font-size: 10px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#introduction_box_1').hide();
+            $('#introduction_box_2').hide();
+            $('#introduction_box_3').hide();
+            $('#introduction_box_4').hide();
+
+            // 1
+            $('#name_number_1').mouseenter(function () {
+                $('#introduction_box_1').slideDown();
+                $('#name_number_1').css(
+                    'background-color' , '#fffbe9c9',
+                    'box-shadow' , '2px 2px 5px' 
+                );
+                $('#member_img_2, #name_number_2, #member_img_3, #name_number_3, #member_img_4, #name_number_4').css('opacity','0.3');
+            });
+            
+            $('#all_1').mouseleave(function () {
+                    $('#introduction_box_1').slideUp();
+                    $('#name_number_1').css(
+                    'background-color' , '#fffbe957',
+                    'box-shadow' , 'none' 
+                    );
+                    $('#member_img_2, #name_number_2, #member_img_3, #name_number_3, #member_img_4, #name_number_4').css('opacity','1');  
+            });
+            // 2
+            $('#name_number_2').mouseenter(function () {
+                $('#introduction_box_2').slideDown();
+                $('#name_number_2').css(
+                    'background-color' , '#fffbe9c9',
+                    'box-shadow' , '2px 2px 5px' 
+                    );
+                $('#member_img_1, #name_number_1, #member_img_3, #name_number_3, #member_img_4, #name_number_4').css('opacity','0.5');
+            });
+            $('#all_2').mouseleave(function () {
+                    $('#introduction_box_2').slideUp();
+                    $('#name_number_2').css(
+                    'background-color' , '#fffbe957',
+                    'box-shadow' , 'none' 
+                    );
+                    $('#member_img_1, #name_number_1, #member_img_3, #name_number_3, #member_img_4, #name_number_4').css('opacity','1');  
+            });
+
+            // 3
+            $('#name_number_3').mouseenter(function () {
+                $('#introduction_box_3').slideDown();
+                $('#name_number_3').css(
+                    'background-color' , '#fffbe9c9',
+                    'box-shadow' , '2px 2px 5px' 
+                    );
+                $('#member_img_2, #name_number_2, #member_img_1, #name_number_1, #member_img_4, #name_number_4').css('opacity','0.5');
+            });
+            $('#all_3').mouseleave(function () {
+                    $('#introduction_box_3').slideUp();
+                    $('#name_number_3').css(
+                    'background-color' , '#fffbe957',
+                    'box-shadow' , 'none' 
+                    );
+                    $('#member_img_2, #name_number_2, #member_img_1, #name_number_1, #member_img_4, #name_number_4').css('opacity','1');  
+            });
+
+            // 4
+            $('#name_number_4').mouseenter(function () {
+                $('#introduction_box_4').slideDown();
+                $('#name_number_4').css(
+                    'background-color' , '#fffbe9c9',
+                    'box-shadow' , '2px 2px 5px' 
+                    );
+                $('#member_img_2, #name_number_2, #member_img_3, #name_number_3, #member_img_1, #name_number_1').css('opacity','0.5');
+            });
+            $('#all_4').mouseleave(function () {
+                    $('#introduction_box_4').slideUp();
+                    $('#name_number_4').css(
+                    'background-color' , '#fffbe957',
+                    'box-shadow' , 'none' 
+                    );
+                    $('#member_img_2, #name_number_2, #member_img_3, #name_number_3, #member_img_1, #name_number_1').css('opacity','1'); 
+            });
+        })
+    </script>
+
+</head>
+<body>
+    <header>
+        <a href="./index.html" target="_blank"><img src="./_img/title.png" alt=""></a>
+    </header>
+    
+    <hr style="border: 3px double #4C4834; width: 80vw; ">
+
+    <h1>成員介紹</h1>
+
+    <main>
+        <div class="container">
+            <div class="member_box">
+                <div class="member_img" id="member_img_1"><img src="./_img/introduction/1103205.jpeg" alt=""></div>
+                <div class="all" id="all_1">
+                    <div class="name_number" id="name_number_1"><p>1103205 王筱琪</p></div>
+                    
+                    <div class="introduction_box" id="introduction_box_1">
+                        <div class="yzu"><p>元智大學 資傳系 二年級 A班</p></div>
+                        <div class="job">
+                            <p>負責工作</p>
+                            <p class="job_con">期中：企畫撰寫內容及討論</p>
+                            <p class="blank">&nbsp;</p>
+                            <p class="job_con">期末：專案討論、新聞稿撰寫、資料蒐集與統整、專案報告書word、報告投影片ppt</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="member_box">
+                <div class="member_img" id="member_img_2"><img src="./_img/introduction/1103221.jpg" alt=""></div>
+                <div class="all" id="all_2">
+                    <div class="name_number" id="name_number_2"><p>1103221 黃聖芪</p></div>
+                    
+                    <div class="introduction_box" id="introduction_box_2">
+                        <div class="yzu"><p>元智大學 資傳系 二年級 A班</p></div>
+                        <div class="job">
+                            <p>負責工作</p>
+                            <p class="job_con">期中：企劃發想、企劃內容討論</p>
+                            <p class="blank">&nbsp;</p>
+                            <p class="job_con">期末：專案討論、新聞分頁製作、網站展示與操作介紹影片剪輯</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="member_box">
+                <div class="member_img" id="member_img_3"><img src="./_img/introduction/1103233.JPG" alt=""></div>
+                <div class="all" id="all_3">
+                    <div class="name_number" id="name_number_3"><p>1103233 莊于嫻</p></div>
+                
+                    <div class="introduction_box" id="introduction_box_3">
+                        
+                        <div class="yzu"><p>元智大學 資傳系 二年級 A班</p></div>
+                        <div class="job">
+                            <p>負責工作</p>
+                            <p class="job_con">期末：網站展示與操作介紹影片錄影錄音</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="member_box">
+                <div class="member_img" id="member_img_4"><img src="./_img/introduction/1103241.png" alt=""></div>
+                <div class="all" id="all_4">
+                    <div class="name_number" id="name_number_4"><p>1103241 邱瑀柔</p></div>
+                
+                    <div class="introduction_box" id="introduction_box_4">
+                        
+                        <div class="yzu"><p>元智大學 資傳系 二年級 A班</p></div>
+                        <div class="job">
+                            <p>負責工作</p>
+                            <p class="job_con">期中：企畫書製作、企劃內容撰寫及討論、logo設計、報告ppt</p>
+                            <p class="blank">&nbsp;</p>
+                            <p class="job_con">期末：專案討論、新聞稿撰寫、資料蒐集與統整、首頁製作、搜尋頁製作、程式碼統整</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </main>
+    
+    <hr style="border: 3px double #4C4834; width: 80vw; ">
+
+    <footer>
+        <p>若歷史事件以現代人的口吻及風格撰寫成新聞，會如何呢？</p>
+        <p>進入一探究竟吧！</p>
+    </footer>
+</body>
+</html>
