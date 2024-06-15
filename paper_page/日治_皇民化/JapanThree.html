@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日治時期</title>
+    <!-- js -->
+    <script src="../../_js/jquery-3.6.4.min.js"></script>
+    <script src="../../_js/jquery-ui-1.13.2.custom/_js/jquery-ui.js"></script>
+    <script src="../../_js/mgs.js"></script>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dela+Gothic+One&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../_css/header.css">
+    <link rel="stylesheet" href="../_css/marquee.css">
+    <link rel="stylesheet" href="../_css/find.css">
+    <link rel="stylesheet" href="../_css/main.css">
+    <link rel="stylesheet" href="../_css/report_home.css">
+    <link rel="stylesheet" href="../_css/mgs.css">
+
+    <style>
+        .main_item1 h1:first-child{
+            font-size: 95px;
+            color: brown;
+        }
+        .main_item1 h1:nth-child(2){
+            font-size: 96px;
+            color: darkgreen;
+        }
+
+        @keyframes img_marquee {
+            0% {
+                transform: translateX(10%);
+            }
+            50% {
+                transform: translateX(-160%);
+            }
+            100% {
+                transform: translateX(10%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <div>1937</div>
+            <div>年</div>
+            <div>7</div>
+            <div>月</div>
+            <div>7</div>
+            <div>日</div>
+        </div>
+
+        <div class="header">
+            <img src="../圖/標題.png" alt="">
+        </div>
+        <div class="marqee_container">
+            <div class="marqee">
+                七七抗戰日的到來，背後究竟還有甚麼不為人知的祕密？原以為的光復，實際上卻是一記陰謀？
+            </div>
+        </div>
+        <div class="img_gellary">
+            <div class="img_marqee">
+                <img src="../圖/jp5_1.jpg" alt="" class="photo">
+                <img src="../圖/jp5_2.jpg" alt="" class="photo">
+                <img src="../圖/jp5_3.jpg" alt="" class="photo">
+                
+            </div>
+        </div>
+
+        <div class="find">
+            <div id="btn_blue" class="find_item item1">人</div>
+            <div id="btn_green" class="find_item item2">事</div>
+            <div id="btn_red" class="find_item item3">地</div>
+        </div>
+
+        <div class="main">
+            <div class="main_item1">
+                <h1>「光復」背後</h1>
+                <h1>台灣人的悲傷</h1>
+            </div>
+            <div class="main_item">
+                <p>
+                    在<span class="red">盧溝橋</span>進行軍事演習的<span class="blue">日本軍隊</span>，藉著有一名日軍士兵失蹤，要求進入盧溝橋蒐查，<span class="blue">中國軍隊拒絕</span>這個要求，因此掀開了<span class="green">中日戰爭</span>的序幕。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    對中國而言，抗日戰爭無疑是洗雪百年國恥的關鍵一仗，但台灣人需要分擔中國的百年國恥嗎，這與台灣人有何關係呢？中國最受恥辱便是馬關條約，根據馬關條約，台灣、澎湖永久割讓給日本，中國割台完全沒有考慮台灣人的意願和感受，反而日本政府給台灣人兩年時間，自主選擇去留，日本政府對於選擇離開台灣者，還免課其攜帶財產的海關稅。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    事實上，日治時期台灣發展遠超中國，但中國卻躲在美國背後，以解放者的姿態君臨台灣，「光復」不到兩年就爆發二二八事變。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    「七七抗戰紀念日」、「光復台灣」真的如大家口中的那樣嗎？
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="mgs_box">
+
+        <div class="mgs_list_box">
+            <ul class="mgs_list">
+                <li id="start_mgs">歡迎留言</li>
+            </ul> 
+        </div>
+        <div id="text_btn_div">
+            <input type="name" id="mgs_name" placeholder="寫下你的名字">
+            <input type="text" id="mgs_text" placeholder="歡迎留言..." >
+                
+            <div id="mgs_btn_div">
+                    <input type="submit" id="mgs_btn">
+                    <img id="mgs_btn_img" src="../圖/sent.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="report">
+        <div>編輯：黃聖芪</div>
+        <div>範圍：日治時期　皇民化</div>
+        <a href="../../index.html"><div class="home">回首頁</div></a>
+        <a href="../../search.html"><div class="home">回搜尋頁面</div></a>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('span').css({
+                color:'black'
+            });
+            $('.item1').click(function(){
+                
+                $('.blue').toggle($('.blue').css('color', 'blue'));
+            });
+            $('.item2').click(function(){
+                $('.green').css('color', 'green');
+            });
+            $('.item3').click(function(){
+                $('.red').css('color', 'red');
+            });
+        });
+       
+    </script>
+</body>
+</html>

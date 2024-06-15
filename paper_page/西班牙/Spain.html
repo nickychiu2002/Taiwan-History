@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西班牙時期</title>
+    <!-- js -->
+    <script src="../../_js/jquery-3.6.4.min.js"></script>
+    <script src="../../_js/jquery-ui-1.13.2.custom/_js/jquery-ui.js"></script>
+    <script src="../../_js/mgs.js"></script>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dela+Gothic+One&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../_css/header.css">
+    <link rel="stylesheet" href="../_css/marquee.css">
+    <link rel="stylesheet" href="../_css/find.css">
+    <link rel="stylesheet" href="../_css/main.css">
+    <link rel="stylesheet" href="../_css/report_home.css">
+    <link rel="stylesheet" href="../_css/mgs.css">
+
+    <style>
+        .main_item1 h1:first-child{
+            font-size: 115px;
+            color: brown;
+        }
+        .main_item1 h1:nth-child(2){
+            font-size: 55px;
+            color: darkgreen;
+        }
+
+        @keyframes img_marquee {
+            0% {
+                transform: translateX(10%);
+            }
+            50% {
+                transform: translateX(-105%);
+            }
+            100% {
+                transform: translateX(10%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <div>1626</div>
+            <div>年</div>
+            <div>5</div>
+            <div>月</div>
+            <div>12</div>
+            <div>日</div>
+        </div>
+        <div class="header">
+            <img src="../圖/標題.png" alt="">
+        </div>
+        <div class="marqee_container">
+            <div class="marqee">
+                勿協助外來者！本島同胞應齊聚一堂，趕走外族！
+            </div>
+        </div>
+        <div class="img_gellary">
+            <div class="img_marqee">
+                <img src="../圖/1626_Map_of_Keelung_and_Tamsui_Harbor,_Formosa-Taiwan_by_Spanish_西班牙人所繪福爾摩沙基隆港與淡水港.png" alt="" class="photo">
+                <img src="../圖/800px-1630年基隆和平島.png" alt="" class="photo">
+                <img src="../圖/800px-1664年基隆和平島.jpg" alt="" class="photo">
+                <img src="../圖/鄭成功.jpg" alt="" class="photo">
+            </div>
+        </div>
+        <div class="find">
+            <div class="find_item item1">人</div>
+            <div class="find_item item2">事</div>
+            <div class="find_item item3">地</div>
+        </div>
+        <div class="main">
+            <div class="main_item1">
+                <h1>外族入侵!!!!!!!!</h1>
+                <h1>再不團結西人恐將奪走家園!</h1>
+            </div>
+            <div class="main_item">
+                <p>
+                    成群的外族，疑似從馬尼拉出發，從<span class="red">雞籠</span>入侵本島。該族群持有強大火力武器，殘忍<span class="green">攻擊、殺害當地居民</span>，究竟有何居心？
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    根據報導，<span class="blue">西人</span>不滿本島南部被荷人占領，為霸佔本島，決定前來北部，與之抗衡。受到攻擊的當地居民為保護家園、保護自己，通知北部同胞並希望能一同拒之於外。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    但西人武器強大，身體卻不怎麼強壯，近期發現許多入侵的西人<span class="green">生病與死亡數逐漸攀升</span>。根據經驗豐富的漁民猜測，原因離不開缺乏糧食以及乾淨的水源造成的水土不服導致。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    但無論如何，外來的就是入侵者！望本島同胞能齊聚一堂，趕走外族！
+                </p>
+            </div>
+        </div>
+
+        <div id="mgs_box">
+
+            <div class="mgs_list_box">
+                <ul class="mgs_list">
+                    <li id="start_mgs">歡迎留言</li>
+                </ul> 
+            </div>
+            <div id="text_btn_div">
+                <input type="name" id="mgs_name" placeholder="寫下你的名字">
+                <input type="text" id="mgs_text" placeholder="歡迎留言..." >
+                    
+                <div id="mgs_btn_div">
+                        <input type="submit" id="mgs_btn">
+                        <img id="mgs_btn_img" src="../圖/sent.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="report">
+            <div>編輯：黃聖芪</div>
+            <div>範圍：荷西時期　西班牙</div>
+            <a href="../../index.html"><div class="home">回首頁</div></a>
+            <a href="../../search.html"><div class="home">回搜尋頁面</div></a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('span').css({color:'black'});
+            $('.item1').click(function(){
+                $('.blue').css('color', 'blue');
+            });
+            $('.item2').click(function(){
+                $('.green').css('color', 'green');
+            });
+            $('.item3').click(function(){
+                $('.red').css('color', 'red');
+            });
+        });
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日治時期</title>
+    <!-- js -->
+    <script src="../../_js/jquery-3.6.4.min.js"></script>
+    <script src="../../_js/jquery-ui-1.13.2.custom/_js/jquery-ui.js"></script>
+    <script src="../../_js/mgs.js"></script>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dela+Gothic+One&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../_css/header.css">
+    <link rel="stylesheet" href="../_css/marquee.css">
+    <link rel="stylesheet" href="../_css/find.css">
+    <link rel="stylesheet" href="../_css/main.css">
+    <link rel="stylesheet" href="../_css/report_home.css">
+    <link rel="stylesheet" href="../_css/mgs.css">
+
+    <style>
+        .main_item1 h1:first-child{
+            font-size: 135px;
+            color: brown;
+        }
+        .main_item1 h1:nth-child(2){
+            font-size: 92px;
+            color: darkgreen;
+        }
+
+        @keyframes img_marquee {
+            0% {
+                transform: translateX(10%);
+            }
+            50% {
+                transform: translateX(-95%);
+            }
+            100% {
+                transform: translateX(10%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <div>1928</div>
+            <div>年</div>
+            <div>3</div>
+            <div>月</div>
+            <div>20</div>
+            <div>日</div>
+        </div>
+        <div class="header">
+            <img src="../圖/標題.png" alt="">
+        </div>
+        <div class="marqee_container">
+            <div class="marqee">
+                串連華南、台灣、南洋。最新政策「南進政策」，將成為日本擴張地位、霸權及領土的關鍵？
+            </div>
+        </div>
+        <div class="img_gellary">
+            <div class="img_marqee">
+                <img src="../圖/jp6_1.jpg" alt="" class="photo">
+                <img src="../圖/jp6_2.jpg" alt="" class="photo">
+                <img src="../圖/jp6_3.jpg" alt="" class="photo">
+                
+            </div>
+        </div>
+        <div class="find">
+            <div class="find_item item1">人</div>
+            <div class="find_item item2">事</div>
+            <div class="find_item item3">地</div>
+        </div>
+        <div class="main">
+            <div class="main_item1">
+                <h1>南進!!!!!!!!!!!!</h1>
+                <h1>台灣成最大跳板</h1>
+            </div>
+            <div class="main_item">
+                <p>
+                    隨著日本國內軍國主義的抬頭，<span class="blue">日本</span>積極準備向外擴張，軍方大倡「南進國策論」，希望取得東南亞豐富的自然資源， 以做為日本帝國的「南方生命線」。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    日本在<span class="red">台灣</span><span class="green">設立了台北帝國大學</span>，以南洋人文及熱帶農業的研究為重心。而為配合南進政策，總督府亦開始積極發展工業， 而以針對軍事需求的化學與金屬工業為發展重心，將新取得的東南亞地帶帶入整個經濟、工業生產環節中。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    日本做了這些，全全都是為了使華南、臺灣、南洋連成一氣，從華南開展「大陸政策」，以侵略中國大陸為主。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    最終目標是在確保對中國大陸的霸權地位後，再向太平洋地區進行擴張。
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="mgs_box">
+
+        <div class="mgs_list_box">
+            <ul class="mgs_list">
+                <li id="start_mgs">歡迎留言</li>
+            </ul> 
+        </div>
+        <div id="text_btn_div">
+            <input type="name" id="mgs_name" placeholder="寫下你的名字">
+            <input type="text" id="mgs_text" placeholder="歡迎留言..." >
+                
+            <div id="mgs_btn_div">
+                    <input type="submit" id="mgs_btn">
+                    <img id="mgs_btn_img" src="../圖/sent.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="report">
+        <div>編輯：黃聖芪</div>
+        <div>範圍：日治時期　皇民化</div>
+        <a href="../../index.html"><div class="home">回首頁</div></a>
+        <a href="../../search.html"><div class="home">回搜尋頁面</div></a>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('span').css({color:'black'});
+            $('.item1').click(function(){
+                $('.blue').css('color', 'blue');
+            });
+            $('.item2').click(function(){
+                $('.green').css('color', 'green');
+            });
+            $('.item3').click(function(){
+                $('.red').css('color', 'red');
+            });
+        });
+       
+    </script>
+</body>
+</html>

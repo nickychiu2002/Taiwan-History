@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日治時期</title>
+    <!-- js -->
+    <script src="../../_js/jquery-3.6.4.min.js"></script>
+    <script src="../../_js/jquery-ui-1.13.2.custom/_js/jquery-ui.js"></script>
+    <script src="../../_js/mgs.js"></script>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dela+Gothic+One&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../_css/header.css">
+    <link rel="stylesheet" href="../_css/marquee.css">
+    <link rel="stylesheet" href="../_css/find.css">
+    <link rel="stylesheet" href="../_css/main.css">
+    <link rel="stylesheet" href="../_css/report_home.css">
+    <link rel="stylesheet" href="../_css/mgs.css">
+
+    <style>
+        .main_item1 h1:first-child{
+            font-size: 100px;
+            color: brown;
+        }
+        .main_item1 h1:nth-child(2){
+            font-size: 100px;
+            color: darkgreen;
+        }
+
+        @keyframes img_marquee {
+            0% {
+                transform: translateX(10%);
+            }
+            50% {
+                transform: translateX(-40%);
+            }
+            100% {
+                transform: translateX(10%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <div>1914</div>
+            <div>年</div>
+            <div>6</div>
+            <div>月</div>
+            <div>29</div>
+            <div>日</div>
+        </div>
+        <div class="header">
+            <img src="../圖/標題.png" alt="">
+        </div>
+        <div class="marqee_container">
+            <div class="marqee">
+                擬訂實施新計畫，究竟是「治理」還是「致死」？新政權的慘忍無度到底何時能夠停止？ 
+            </div>
+        </div>
+        <div class="img_gellary">
+            <div class="img_marqee">
+                <img src="../圖/jp2_1.jpg" alt="" class="photo">
+                <img src="../圖/jp2_2.jpg" alt="" class="photo">
+                <img src="../圖/jp2_3.jpg" alt="" class="photo">
+                
+            </div>
+        </div>
+        <div class="find">
+            <div class="find_item item1">人</div>
+            <div class="find_item item2">事</div>
+            <!-- <div class="find_item item3">地</div> -->
+        </div>
+        <div class="main">
+            <div class="main_item1">
+                <h1>嘴上的理番計畫</h1>
+                <h1>實為虐殺的美名</h1>
+            </div>
+            <div class="main_item">
+                <p>
+                    臺灣總督<span class="blue">佐久間左馬太</span>擬定了「<span class="green">五年理番計畫</span>」，雖然說是要理番，但卻是用武力的方式來治理，此行為讓原住民死傷慘重家破人亡。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    佐久間左馬太一方面以「以蕃制蕃」外，也發動所謂的「剿蕃戰役」餘一百六十次之多，對原住民實施「殺光、搶光、燒光」的「三光政策」。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    「一家離散，單只一人歸順的彎腰老蕃婦如瘋狂似的，每日至附近的山中尋找至親，因饑餓而瘦削的蕃婦，宛然此世的餓鬼，那如絲線般的細手伸著手指。」這是當時的人所敘述的慘況，讓人大為震驚。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    即便原住民已表明歸順而成俘虜者，也會依舊毫無顧忌未經裁判而予以屠殺，這場殘忍的虐殺何時才能停止呢？
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="mgs_box">
+
+        <div class="mgs_list_box">
+            <ul class="mgs_list">
+                <li id="start_mgs">歡迎留言</li>
+            </ul> 
+        </div>
+        <div id="text_btn_div">
+            <input type="name" id="mgs_name" placeholder="寫下你的名字">
+            <input type="text" id="mgs_text" placeholder="歡迎留言..." >
+                
+            <div id="mgs_btn_div">
+                    <input type="submit" id="mgs_btn">
+                    <img id="mgs_btn_img" src="../圖/sent.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="report">
+        <div>編輯：黃聖芪</div>
+        <div>範圍：日治時期　無方針</div>
+        <a href="../../index.html"><div class="home">回首頁</div></a>
+        <a href="../../search.html"><div class="home">回搜尋頁面</div></a>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('span').css({color:'black'});
+            $('.item1').click(function(){
+                $('.blue').css('color', 'blue');
+            });
+            $('.item2').click(function(){
+                $('.green').css('color', 'green');
+            });
+            $('.item3').click(function(){
+                $('.red').css('color', 'red');
+            });
+        });
+       
+    </script>
+</body>
+</html>

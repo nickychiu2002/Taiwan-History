@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西班牙時期</title>
+    <!-- js -->
+    <script src="../../_js/jquery-3.6.4.min.js"></script>
+    <script src="../../_js/jquery-ui-1.13.2.custom/_js/jquery-ui.js"></script>
+    <script src="../../_js/mgs.js"></script>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dela+Gothic+One&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../_css/header.css">
+    <link rel="stylesheet" href="../_css/marquee.css">
+    <link rel="stylesheet" href="../_css/find.css">
+    <link rel="stylesheet" href="../_css/main.css">
+    <link rel="stylesheet" href="../_css/report_home.css">
+    <link rel="stylesheet" href="../_css/mgs.css">
+
+    <style>
+        .main_item1 h1:first-child{
+            font-size: 100px;
+            color: brown;
+        }
+        .main_item1 h1:nth-child(2){
+            font-size: 100px;
+            color: darkgreen;
+        }
+
+        @keyframes img_marquee {
+            0% {
+                transform: translateX(10%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(10%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <div>1642</div>
+            <div>年</div>
+            <div>8</div>
+            <div>月</div>
+            <div>27</div>
+            <div>日</div>
+        </div>
+        <div class="header">
+            <img src="../圖/標題.png" alt="">
+        </div>
+        <div class="marqee_container">
+            <div class="marqee">
+                西人戰敗，在台首領缺乏責任感，選擇跑路！祝賀！擺脫卒仔西人，迎接真愛荷人！
+            </div>
+        </div>
+        <div class="img_gellary">
+            <div class="img_marqee">
+                <img src="../圖/spa1_1.jpg" alt="" class="photo">
+                <img src="../圖/spa1_2.jpg" alt="" class="photo">
+                <img src="../圖/spa1_3.jpg" alt="" class="photo">
+                <img src="../圖/spa1_4.jpg" alt="" class="photo">
+            </div>
+        </div>
+        <div class="find">
+            <div class="find_item item1">人</div>
+            <div class="find_item item2">事</div>
+            <div class="find_item item3">地</div>
+        </div>
+        <div class="main">
+            <div class="main_item1">
+                <h1>擺脫廢物西人 </h1>
+                <h1>支持荷人北上</h1>
+            </div>
+            <div class="main_item">
+                <p>
+                    <span class="blue">荷人</span>北上，欲佔領<span class="red">本島北部</span>，趕走<span class="blue">西人</span>。人未到，信先到。荷人發起招降書，要求西人「交出城堡，避免流血」。西人不自量力，決定大膽迎戰！</p>
+            </div>
+            <div class="main_item">
+                <p>
+                    西人長官波提羅違背菲律賓總督柯逵拉旨意，修建城堡，迎戰北上荷人。保守的荷人第一次北上並未發起猛攻，自負的西人因此鬆懈。重新出發的<span class="green">荷人，以眾敵寡，輕取西人</span>。
+
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    戰敗後，「卒仔」西人長官波提羅，害怕雞籠失守的責任怪到他頭上，不敢回國，開啟跑路生涯「出國進修」。以致菲律賓總督柯逵拉成為眾矢之的，獲四年的牢獄之災。可見，荷人才是我們的最佳選項。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    擺脫卒仔西人，迎接真愛荷人！
+                </p>
+            </div>
+        </div>
+
+        <div id="mgs_box">
+
+            <div class="mgs_list_box">
+                <ul class="mgs_list">
+                    <li id="start_mgs">歡迎留言</li>
+                </ul> 
+            </div>
+            <div id="text_btn_div">
+                <input type="name" id="mgs_name" placeholder="寫下你的名字">
+                <input type="text" id="mgs_text" placeholder="歡迎留言..." >
+                    
+                <div id="mgs_btn_div">
+                        <input type="submit" id="mgs_btn">
+                        <img id="mgs_btn_img" src="../圖/sent.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="report">
+            <div>編輯：黃聖芪</div>
+            <div>範圍：荷西時期　西班牙</div>
+            <a href="../../index.html"><div class="home">回首頁</div></a>
+            <a href="../../search.html"><div class="home">回搜尋頁面</div></a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('span').css({color:'black'});
+            $('.item1').click(function(){
+                $('.blue').css('color', 'blue');
+            });
+            $('.item2').click(function(){
+                $('.green').css('color', 'green');
+            });
+            $('.item3').click(function(){
+                $('.red').css('color', 'red');
+            });
+        });
+       
+    </script>
+</body>
+</html>

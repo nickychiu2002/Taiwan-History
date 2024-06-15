@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日治時期</title>
+    <!-- js -->
+    <script src="../../_js/jquery-3.6.4.min.js"></script>
+    <script src="../../_js/jquery-ui-1.13.2.custom/_js/jquery-ui.js"></script>
+    <script src="../../_js/mgs.js"></script>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dela+Gothic+One&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../_css/header.css">
+    <link rel="stylesheet" href="../_css/marquee.css">
+    <link rel="stylesheet" href="../_css/find.css">
+    <link rel="stylesheet" href="../_css/main.css">
+    <link rel="stylesheet" href="../_css/report_home.css">
+    <link rel="stylesheet" href="../_css/mgs.css">
+
+    <style>
+        .main_item1 h1:first-child{
+            font-size: 115px;
+            color: brown;
+        }
+        .main_item1 h1:nth-child(2){
+            font-size: 65px;
+            color: darkgreen;
+        }
+
+        @keyframes img_marquee {
+            0% {
+                transform: translateX(10%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(10%);
+            }
+        }
+    </style>
+    
+    <script>
+        $(document).ready(function(){
+            $('span').css({color:'black'});
+            $('.item1').click(function(){
+                $('.blue').css('color', 'blue');
+            });
+            $('.item2').click(function(){
+                $('.green').css('color', 'green');
+            });
+            $('.item3').click(function(){
+                $('.red').css('color', 'red');
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <div>1915</div>
+            <div>年</div>
+            <div>8</div>
+            <div>月</div>
+            <div>7</div>
+            <div>日</div>
+        </div>
+        <div class="header">
+            <img src="../圖/標題.png" alt="">
+        </div>
+        <div class="marqee_container">
+            <div class="marqee">
+                第數次流血事件，再次發生······難道日人佔領台灣是因為缺沙包訓練士兵？反抗組織保密作業不確實，消息洩漏，再次反抗失敗。 
+            </div>
+        </div>
+        <div class="img_gellary">
+            <div class="img_marqee">
+                <img src="../圖/jp3_1.jpg" alt="" class="photo">
+                <img src="../圖/jp3_2.jpg" alt="" class="photo">
+                <img src="../圖/jp3_3.jpg" alt="" class="photo">
+                <img src="../圖/jp3_4.jpg" alt="" class="photo">
+            </div>
+        </div>
+        <div class="find">
+            <div class="find_item item1">人</div>
+            <div class="find_item item2">事</div>
+            <div class="find_item item3">地</div>
+        </div>
+        <div class="main">
+            <div class="main_item1">
+                <h1>勇敢站出來!!!</h1>
+                <h1>此話一出卻一去不復返</h1>
+            </div>
+            <div class="main_item">
+                <p>
+                    <span class="blue">余清芳、羅俊、江定</span>等人，藉由<span class="red">台南市區的五福王爺廟「西來庵」</span>，作為根據地，以宗教形式招募信徒，並鼓吹民眾採取武裝行動對抗日本殖民政府，建立自己的政權「<span class="green">大明慈悲國</span>」。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    吸引許多當時飽受生計之苦的台南、高雄山區農民參與，原本余清芳等人預定於8月起事，但由於保密不嚴，該年五月時各地已風傳台灣將發生抗日行動！甚至還傳言將引中國<span class="blue">袁世凱</span>的北洋軍攻台。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    八月六日雙方在<span class="red">噍吧哖</span>交戰，日軍以現代化的步兵、砲兵協同作戰，面對憑藉著符咒、傳統兵器的反抗軍，以壓倒性的優勢予以擊潰，反抗軍死傷慘重！！
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    根據日軍統計，戰場上遺留的反抗軍屍體為159具，後來的零星戰鬥中又有150人遭擊斃，日軍日後也在鄰近村庄、山區進行大規模的搜捕行動，過程中燒毀許多民房，並導致許多平民遭到報復性的殺害。
+                </p>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div id="mgs_box">
+
+        <div class="mgs_list_box">
+            <ul class="mgs_list">
+                <li id="start_mgs">歡迎留言</li>
+            </ul> 
+        </div>
+        <div id="text_btn_div">
+            <input type="name" id="mgs_name" placeholder="寫下你的名字">
+            <input type="text" id="mgs_text" placeholder="歡迎留言..." >
+                
+            <div id="mgs_btn_div">
+                    <input type="submit" id="mgs_btn">
+                    <img id="mgs_btn_img" src="../圖/sent.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="report">
+        <div>編輯：黃聖芪</div>
+        <div>範圍：日治時期　內地延長</div>
+        <a href="../../index.html"><div class="home">回首頁</div></a>
+        <a href="../../search.html"><div class="home">回搜尋頁面</div></a>
+    </div>
+    
+</body>
+</html>

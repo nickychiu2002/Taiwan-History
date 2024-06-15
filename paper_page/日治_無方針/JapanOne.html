@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日治時期</title>
+    <!-- js -->
+    <script src="../../_js/jquery-3.6.4.min.js"></script>
+    <script src="../../_js/jquery-ui-1.13.2.custom/_js/jquery-ui.js"></script>
+    <script src="../../_js/mgs.js"></script>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dela+Gothic+One&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fuzzy+Bubbles&family=Noto+Sans+TC:wght@300&family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../_css/header.css">
+    <link rel="stylesheet" href="../_css/marquee.css">
+    <link rel="stylesheet" href="../_css/find.css">
+    <link rel="stylesheet" href="../_css/main.css">
+    <link rel="stylesheet" href="../_css/report_home.css">
+    <link rel="stylesheet" href="../_css/mgs.css">
+
+    <style>
+        .main_item1 h1:first-child{
+            font-size: 100px;
+            color: brown;
+        }
+        .main_item1 h1:nth-child(2){
+            font-size: 83px;
+            color: darkgreen;
+        }
+
+        @keyframes img_marquee {
+            0% {
+                transform: translateX(10%);
+            }
+            50% {
+                transform: translateX(-90%);
+            }
+            100% {
+                transform: translateX(10%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <div>1915</div>
+            <div>年</div>
+            <div>8</div>
+            <div>月</div>
+            <div>7</div>
+            <div>日</div>
+        </div>
+        <div class="header">
+            <img src="../圖/標題.png" alt="">
+        </div>
+        <div class="marqee_container">
+            <div class="marqee">
+                新進政權暴力統治！大屠殺致死上萬人，慘遭西洋國際媒體關注撻伐！ 
+            </div>
+        </div>
+        <div class="img_gellary">
+            <div class="img_marqee">
+                <img src="../圖/jp1_1.jpeg" alt="" class="photo">
+                <img src="../圖/jp1_2.jpeg" alt="" class="photo">
+                <img src="../圖/jp1_3.jpg" alt="" class="photo">
+                
+            </div>
+        </div>
+        <div class="find">
+            <div class="find_item item1">人</div>
+            <div class="find_item item2">事</div>
+            <div class="find_item item3">地</div>
+        </div>
+        <div class="main">
+            <div class="main_item1">
+                <h1>被統治的悲哀!!!</h1>
+                <h1>縱火殘殺無數百姓</h1>
+            </div>
+            <div class="main_item">
+                <p>
+                    <span class="blue">簡義與</span>與<span class="blue">柯鐵虎</span>等人先前的抗日事件，殺害無數日軍，而這些的抗日事件也引發了日軍慘無人道的報復性屠殺！
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    日本政府爲了報復抗日行動，於六月二十日到二十三日集結大軍，在<span class="red">雲林</span>一帶進行無差別的大屠殺，日軍當時見人就殺，即使婦女與幼兒也不放過，並任意將村庄指爲匪窖而四處焚屋，造成五十六處村莊遭焚燬，五千戶民房遭縱火，尤以斗六街及石龜溪庄死傷最爲慘重。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    這次的事件被稱為「<span class="green">雲林大屠殺</span>」，造成了上千人的死亡，也有人透漏說，死亡人數甚至達到一萬餘人！日本政府此一殘酷屠殺行爲，經西洋傳教士投書國際媒體，也引發國際社會的撻伐。
+                </p>
+            </div>
+            <div class="main_item">
+                <p>
+                    日軍的報復屠殺讓雲林一帶的抗日勢力更爲壯大，開啟了長達三年的游擊戰事，隨後日方也開始了強勢攻佔與懷柔招順的兩手策略，不久後，簡義就在辜顯榮的勸降下<span class="green">對日本投降</span>。
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="mgs_box">
+
+        <div class="mgs_list_box">
+            <ul class="mgs_list">
+                <li id="start_mgs">歡迎留言</li>
+            </ul> 
+        </div>
+        <div id="text_btn_div">
+            <input type="name" id="mgs_name" placeholder="寫下你的名字">
+            <input type="text" id="mgs_text" placeholder="歡迎留言..." >
+                
+            <div id="mgs_btn_div">
+                    <input type="submit" id="mgs_btn">
+                    <img id="mgs_btn_img" src="../圖/sent.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="report">
+        <div>編輯：黃聖芪</div>
+        <div>範圍：日治時期　無方針</div>
+        <a href="../../index.html"><div class="home">回首頁</div></a>
+        <a href="../../search.html"><div class="home">回搜尋頁面</div></a>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('span').css({color:'black'});
+            $('.item1').click(function(){
+                $('.blue').css('color', 'blue');
+            });
+            $('.item2').click(function(){
+                $('.green').css('color', 'green');
+            });
+            $('.item3').click(function(){
+                $('.red').css('color', 'red');
+            });
+        });
+       
+    </script>
+</body>
+</html>
