@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../_img/bg2.png);
+    background-size: 100vw ;
+    background-color: #ceba9e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+/* header *//* header *//* header *//* header *//* header *//* header *//* header */
+header {
+    display: flex;
+    /* position: sticky; */
+    top: 0;
+
+    width: 100vw;
+    height: 15vh;
+
+}
+header > a{
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.header_inside img {
+    display: flex;
+    /* position: sticky; */
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 100px
+}
+
+.header_inside  {
+    position: absolute;
+    left: 0;
+    /* background-color: #1c50a4; */
+    height: 15vh;
+    width: 100vw;
+    opacity: 1;
+    font-family: 'Dela Gothic One', cursive;
+    display: flex;
+    flex-direction: row;
+    color: #3c3827;
+    font-size: 80px;
+    line-height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_inside p {
+    margin-top: 10px;
+    color: #3c3827;
+}
+
+.shopping_cart, #shopping_cart {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fffbe97e;
+    right: 50px;
+    top: 35px;
+    cursor: pointer;
+}
+
+.shopping_cart img, #shopping_cart img {
+    width: 40px;
+    margin: 8px 0 0 8px;
+    /* cursor: pointer; */
+}
+
+.shopping_cart:hover, #shopping_cart:hover {
+    background-color: #fffbe9d9;
+}
+
+/* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: #3c3827;
+    color: #fffbe9;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+a, a:hover, a:link,a:visited{
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,143 @@
+nav {
+    width: 90vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    /* position: sticky; */
+    top: 16vh;
+    /* background-color: #ffda89; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px ;
+    
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 35px;
+    color: #3c3827;
+
+    border-top: 3px double #3c3827;
+    border-bottom: 3px double #3c3827;
+}
+
+.navitem {
+    margin: 0px 100px;
+    font-size: 35px;
+}
+
+#shoes, #player{
+    width: 200px;
+    height: 48px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #3c3827;
+    font-weight: 900;
+    justify-content: center;
+    line-height: 50px;
+}
+
+#shoes:hover, #player:hover {
+    background-color: #fffbe9b1;
+    font-weight: 900;
+}
+
+/* 荷西 */
+.shoes_ul {
+    position: absolute;
+    top: 170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+
+    background-color: #fffdf4ee;
+    color: #3c3827;
+    width: 200px;
+    height: fit-content;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 200;
+    
+    box-shadow: 2px 2px 3px#ba9e64;
+    line-height: 50px;
+}
+#shoes_title{
+    cursor: pointer;
+}
+/* 日治 */
+.player_ul {
+    position: absolute;
+    top: 170px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+
+    background-color: #fffdf4ee;
+    color: #3c3827;
+    width: 250px;
+    height: fit-content;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 200;
+    
+    box-shadow: 2px 2px 3px#ba9e64;
+    line-height: 50px;
+}
+#player_title{
+    cursor: pointer;
+}
+.player_logo {
+    margin: 20px;
+    width: 20%;
+    height: 20%;
+}
+
+.player_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+}
+
+/* 通用 */
+.list_icon {
+    width: 20%;
+    margin: 5px 10px 5px 20px;
+
+}
+
+.select_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    
+    text-align: center;
+}
+#ned, #spain, #ned:hover, #spain:hover{
+    width: 200px;
+}
+#jp_1, #jp_2, #jp_3, #jp_1:hover, #jp_2:hover, #jp_3:hover{
+    width: 250px;
+}
+.select_list > p{
+    margin-top: 5px;
+}
+
+.select_list:hover {
+    background-color: #d4cfb8c5;;
+    border-radius: 10px;
+}
+.player_left:hover{
+    width: 250px;
+}
+.shoes_ul:hover{
+    width: 200px;
+}
